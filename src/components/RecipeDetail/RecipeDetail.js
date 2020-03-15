@@ -1,37 +1,87 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Jumbotron } from "react-bootstrap";
+import {Container, Row, Col, Media} from "react-bootstrap";
 
-import { LoadingAnimation } from "../common/LoadingAnimation";
-import { ErrorAlert } from "../common/ErrorAlert";
+import {LoadingAnimation} from "../common/LoadingAnimation";
+import {ErrorAlert} from "../common/ErrorAlert";
+import {Title} from "../RecipeComponents/Title";
+import {TimeConversion} from "../RecipeComponents/TimeConversion";
+import {DirectionsList} from "../RecipeComponents/DirectionsList";
+import {IngredientsList} from "../RecipeComponents/IngredientsList";
+import {RecipeFooter} from "../RecipeComponents/RecipeFooter";
+import {SideDish} from "../RecipeComponents/SideDish";
 
-export function RecipeDetail(props) {
-  const { isLoading, recipe, error } = props;
-  const { preparationTime, title, directions, ingredients } = recipe || {};
+
+/**
+ * @return {null}
+ */
+export const RecipeDetail = (props) => {
+  const {isLoading, recipe, error} = props;
+  const {
+    directions,
+    ingredients,
+    lastModifiedDate,
+    preparationTime,
+    servingCount,
+    sideDish,
+    slug,
+    title
+  } = recipe || {};
 
   if (error) {
-    return <ErrorAlert />;
+    return <ErrorAlert/>;
   }
 
   if (isLoading) {
-    return <LoadingAnimation />;
+    return <LoadingAnimation/>;
   }
 
-  if (!recipe) {
+  if (!directions) {
     return null;
   }
 
   return (
-    <Jumbotron>
-      <h1>{title}</h1>
-      <p>{preparationTime}</p>
-      <p>{directions}</p>
-    </Jumbotron>
+    <div>
+      <Media.Body style={{marginTop: "15px"}}>
+        <h5>{title}</h5>
+        <p>
+          <TimeConversion
+            time={preparationTime}
+          />
+        </p>
+      </Media.Body>
+      <Media/>
+      <Container>
+        <Row>
+          <Col>
+            <IngredientsList
+              servingCount={servingCount}
+              ingredients={ingredients}
+            />
+            <RecipeFooter
+              lastModifiedDate={lastModifiedDate}
+            />
+          </Col>
+          <Col>
+            <DirectionsList
+              directions={directions}
+            />
+            <div>
+              Odporúčaná príloha: {sideDish ? sideDish
+              : "Podávané bez prílohy"}
+            </div>
+
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
-}
+};
 
 RecipeDetail.propTypes = {
   isLoading: PropTypes.bool.isRequired,
   recipe: PropTypes.object,
   error: PropTypes.string
+
 };
+

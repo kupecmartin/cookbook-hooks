@@ -17,6 +17,6 @@ export const AppNavbar = () => {
      </Navbar>
 
   );
-}
+};
 
 

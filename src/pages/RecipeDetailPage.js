@@ -1,46 +1,39 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { Container } from "react-bootstrap";
+import React, {useState, useEffect} from "react";
+import {Container} from "react-bootstrap";
 
-import { api } from "../api";
+import {api} from "../api";
+
 import { RecipeDetail } from "../components/RecipeDetail/RecipeDetail";
 
-export class RecipeDetailPage extends Component {
-  state = {
-    isLoading: false,
-    recipe: null,
-    error: null
-  };
+export const RecipeDetailPage = (props) => {
+  const [recipe, setRecipe] = useState({});
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
 
-  componentDidMount() {
-    this.setState({
-      isLoading: true
-    });
+  //getting data from api
+  useEffect(() => {
+    const {params} = props.match || {};
+    const {slug} = params || {};
+    const fetchRecipe = async () => {
+      setIsLoading(true);
+      const response = await api.get(`/recipes/${slug}`);
+      setRecipe(response.data);
+      setError(response.problem);
+      setIsLoading(false);
+    };
 
-    const { params } = this.props.match || {};
-    const { slug } = params || {};
+    fetchRecipe().then(r => recipe);
+  }, [/*props.match,recipes*/]);
 
-    api.get(`/recipes/${slug}`).then(response => {
-      const { data, problem } = response;
-      this.setState({
-        isLoading: false,
-        recipe: data,
-        error: problem
-      });
-    });
-  }
-
-  render() {
-    const { isLoading, recipe, error } = this.state;
-
-    return (
-      <Container>
-        <RecipeDetail isLoading={isLoading} recipe={recipe} error={error} />
-      </Container>
-    );
-  }
-}
-
-RecipeDetailPage.propTypes = {
-  match: PropTypes.object.isRequired
+  return (
+    <Container>
+      <RecipeDetail
+        recipe={recipe}
+        isLoading={isLoading}
+        error={error}
+      />
+    </Container>
+  );
 };
+
+

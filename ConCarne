@@ -1,0 +1,41 @@
+{
+  "_id": "5a86bffcc72a100019422806",
+  "title": "Chilli con carne (rychlé)",
+  "preparationTime": 60,
+  "servingCount": 4,
+  "sideDish": "rýže",
+  "directions": "Maso může být jakékoli, výborné je mleté krůtí.\n\n1. Nakrájíme cibuli, orestujeme\n1. Přihodíme maso, osolíme, opepříme, orestujeme\n1. Přidáme obsah obou plechovek\n1. Okořeníme bazalkou, pálivou paprikou nebo chilli\n1. Necháme přiklopené probublávat na nízkou teplotu cca 30 minut\n1. Na konci případně odklopíme a vyvaříme do požadované hustoty\n\nLze jíst i samotné.",
+  "slug": "chilli-con-carne-rychle",
+  "ingredients": [
+    {
+      "name": "mleté maso",
+      "amount": 500,
+      "amountUnit": "g",
+      "isGroup": false,
+      "_id": "5a86bffcc72a10001942280a"
+    },
+    {
+      "name": "Bon Menu Mexicana",
+      "amount": 1,
+      "amountUnit": "ks",
+      "isGroup": false,
+      "_id": "5a86bffcc72a100019422809"
+    },
+    {
+      "name": "krájená loupaná rajčata",
+      "amount": 1,
+      "amountUnit": "ks",
+      "isGroup": false,
+      "_id": "5a86bffcc72a100019422808"
+    },
+    {
+      "name": "cibule",
+      "amount": 1,
+      "amountUnit": "ks",
+      "isGroup": false,
+      "_id": "5a86bffcc72a100019422807"
+    }
+  ],
+  "lastModifiedDate": "2018-06-24T19:56:30.607Z",
+  "__v": 0
+}

@@ -1,21 +1,23 @@
 import React from "react";
-import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
+import PropTypes from "prop-types";
 import {Col, Card} from "react-bootstrap";
 
-import {Title} from "../RecipeComponents/Title";
-import {TimeConversion} from "../RecipeComponents/TimeConversion";
-import {SideDish} from "../RecipeComponents/SideDish";
-
+//mozno iny format kvoli velkosti
 import Image from "../../assets/foodplaceholder.jfif";
 
+import {Title} from "../RecipeComponents/Title";
+import {SideDish} from "../RecipeComponents/SideDish";
+import {TimeConversion} from "../RecipeComponents/TimeConversion";
+
 export const RecipeListItem = (props) => {
-  const {title, time, slug, sideDish} = props;
+  const {slug, title, sideDish, time} = props;
 
   return (
-    <Col xs="12" sm="6" md="4" lg="3" className="recipe">
-      <Link to={`/recipe/${slug}`}>
-        <Card text="info" border="dark">
+
+    <Col xs="12" sm="6" md="4" lg="3" className="recipe" >
+      <Link to={`/recipe/${slug}`} >
+        <Card text="info" border="secondary" >
           <Card.Img variant="top" src={Image}/>
           <Card.Header>
             <Title title={title}/>
@@ -35,7 +37,7 @@ export const RecipeListItem = (props) => {
       </Link>
     </Col>
   );
-}
+};
 
 RecipeListItem.propTypes = {
   title: PropTypes.string.isRequired,

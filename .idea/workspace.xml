@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="229d8583-2045-42b1-9f7d-ea41977e8aa8" name="Default Changelist" comment="" />
+    <list default="true" id="229d8583-2045-42b1-9f7d-ea41977e8aa8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/RecipeComponents/DirectionsList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/RecipeComponents/IngredientsList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/RecipeComponents/RecipeFooter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppNavbar/AppNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppNavbar/AppNavbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Paginator/Pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Paginator/Pagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RecipeComponents/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecipeComponents/SearchBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RecipeComponents/TimeConversion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecipeComponents/TimeConversion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RecipeComponents/Title.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecipeComponents/Title.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RecipeDetail/RecipeDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecipeDetail/RecipeDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RecipeList/RecipeListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecipeList/RecipeListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/RecipeDetailPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RecipeDetailPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/RecipeListPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RecipeListPage.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +29,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YiiToW3UGuWMSUMUa1UQeKPTQW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,6 +41,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../react-udemy/react-cookbook" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -70,7 +90,14 @@
       <workItem from="1583517017260" duration="24117000" />
       <workItem from="1583611640412" duration="679000" />
       <workItem from="1583686956671" duration="5313000" />
-      <workItem from="1583742350042" duration="14647000" />
+      <workItem from="1583742350042" duration="30257000" />
+      <workItem from="1583918345214" duration="6915000" />
+      <workItem from="1583969799964" duration="598000" />
+      <workItem from="1584000039557" duration="3087000" />
+      <workItem from="1584016600510" duration="5933000" />
+      <workItem from="1584095813526" duration="1648000" />
+      <workItem from="1584099938419" duration="1359000" />
+      <workItem from="1584101341535" duration="34108000" />
     </task>
     <servers />
   </component>
@@ -78,37 +105,39 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="832" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583518051666">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="2535" y="466" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584194578362">
+      <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="832" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1583518051666" />
-    <state x="926" y="238" key="FileChooserDialogImpl" timestamp="1583742383569">
+    <state x="2535" y="466" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1584194578362" />
+    <state x="926" y="238" key="FileChooserDialogImpl" timestamp="1584126500598">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="926" y="238" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1583742383569" />
-    <state width="1345" height="123" key="GridCell.Tab.0.bottom" timestamp="1583759979055">
+    <state x="926" y="238" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1584126500598" />
+    <state x="2668" y="340" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1584101107156" />
+    <state width="1345" height="150" key="GridCell.Tab.0.bottom" timestamp="1584118345394">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="123" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1583759979055" />
-    <state width="812" height="202" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1583690388660" />
+    <state width="1345" height="150" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1584118345394" />
+    <state width="1345" height="123" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1583884293104" />
     <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583510507213" />
-    <state width="1345" height="123" key="GridCell.Tab.0.center" timestamp="1583759979054">
+    <state width="1345" height="150" key="GridCell.Tab.0.center" timestamp="1584118345393">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="123" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1583759979054" />
-    <state width="812" height="202" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1583690388660" />
+    <state width="1345" height="150" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1584118345393" />
+    <state width="1345" height="123" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1583884293104" />
     <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583510507213" />
-    <state width="1345" height="123" key="GridCell.Tab.0.left" timestamp="1583759979054">
+    <state width="1345" height="150" key="GridCell.Tab.0.left" timestamp="1584118345392">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="123" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1583759979054" />
-    <state width="812" height="202" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1583690388659" />
+    <state width="1345" height="150" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1584118345392" />
+    <state width="1345" height="123" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1583884293103" />
     <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583510507213" />
-    <state width="1345" height="123" key="GridCell.Tab.0.right" timestamp="1583759979055">
+    <state width="1345" height="150" key="GridCell.Tab.0.right" timestamp="1584118345393">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="123" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1583759979055" />
-    <state width="812" height="202" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1583690388660" />
+    <state width="1345" height="150" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1584118345393" />
+    <state width="1345" height="123" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1583884293104" />
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583510507213" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1583497311142">
       <screen x="0" y="0" width="1366" height="728" />
@@ -123,9 +152,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/pages/RecipeListPage.js</url>
-          <line>62</line>
-          <properties lambdaOrdinal="-1" />
+          <url>file://$PROJECT_DIR$/src/components/RecipeList/RecipeListItem.js</url>
+          <line>6</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

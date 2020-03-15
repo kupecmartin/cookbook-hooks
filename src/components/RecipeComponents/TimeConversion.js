@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
 export const TimeConversion = (props) => {
   const {time} = props;
@@ -31,10 +31,10 @@ export const TimeConversion = (props) => {
       <span className="recipe-text">Čas prípravy: {hourTime}</span>
     </span>
   );
-}
-
-TimeConversion.propTypes = {
-  "time": PropTypes.number.isRequired,
 };
+
+// TimeConversion.propTypes = {
+//   time: PropTypes.number.isRequired,
+// };
 
 

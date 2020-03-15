@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import {Form} from "react-bootstrap";
 
 export function SearchBar(props) {
-  const {value, isChecked, onInputChange, onCheckboxChange, recipesLength} = props;
+  const {value, isChecked, onInputChange, onCheckboxChange} = props;
   return (
     <Form>
       <Form.Group controlId="formSearch">

@@ -7,15 +7,17 @@ import {RecipeList} from "../components/RecipeList/RecipeList";
 import {Paginator} from "../components/Paginator/Pagination";
 import {SearchBar} from "../components/RecipeComponents/SearchBar";
 
-export const RecipeListPage = (props) => {
+export const RecipeListPage = () => {
   const [recipes, setRecipes] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
+
   const [currentPage, setCurrentPage] = useState(1);
   const [recipesPerPage] = useState(8);
-  const [error, setError] = useState(null);
   const [isChecked, setIsChecked] = useState(false);
   const [searchString, setSearchString] = useState("");
 
+  //getting data from api
   useEffect(() => {
     const fetchRecipes = async () => {
       setIsLoading(true);
@@ -23,10 +25,12 @@ export const RecipeListPage = (props) => {
       setRecipes(response.data);
       setError(response.problem);
       setIsLoading(false);
-    }
+
+    };
 
     fetchRecipes().then(r => recipes);
-  }, []);
+  }, [recipes]);
+
 
   //searchInput handler
   const handleInputChange = event => {
