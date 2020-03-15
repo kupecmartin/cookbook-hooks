@@ -1,15 +1,18 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import PropTypes from "prop-types";
-import {Container, Row, Col, Media} from "react-bootstrap";
+import {Container, Row, Col, Media, Button} from "react-bootstrap";
 
 import {LoadingAnimation} from "../common/LoadingAnimation";
 import {ErrorAlert} from "../common/ErrorAlert";
-import {Title} from "../RecipeComponents/Title";
 import {TimeConversion} from "../RecipeComponents/TimeConversion";
+import {EditButtons} from "../RecipeComponents/EditButtons";
 import {DirectionsList} from "../RecipeComponents/DirectionsList";
 import {IngredientsList} from "../RecipeComponents/IngredientsList";
 import {RecipeFooter} from "../RecipeComponents/RecipeFooter";
-import {SideDish} from "../RecipeComponents/SideDish";
+// import {Title} from "../RecipeComponents/Title";
+// import {SideDish} from "../RecipeComponents/SideDish";
+
 
 
 /**
@@ -42,6 +45,7 @@ export const RecipeDetail = (props) => {
 
   return (
     <div>
+      <Media>
       <Media.Body style={{marginTop: "15px"}}>
         <h5>{title}</h5>
         <p>
@@ -50,7 +54,11 @@ export const RecipeDetail = (props) => {
           />
         </p>
       </Media.Body>
-      <Media/>
+       <EditButtons
+          slug={slug}
+       />
+
+      </Media>
       <Container>
         <Row>
           <Col>

@@ -36,14 +36,14 @@ export const RecipeListPage = () => {
   const handleInputChange = event => {
     setSearchString(event.target.value);
   };
-  //checkbox handler
+  //time checkbox handler
   const handleCheckboxChange = event => {
     setIsChecked(event.target.checked);
   };
 
   //Filter recipes
   const filterRecipes = recipe => {
-    const {title, preparationTime} = recipe;
+    const {title, preparationTime, sideDish} = recipe;
     const isInTimeFrame = !isChecked || preparationTime < 30;
     const containsSearchString =
       title.toLowerCase().indexOf(searchString.toLowerCase()) > -1;

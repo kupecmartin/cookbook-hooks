@@ -43,13 +43,17 @@ export const IngredientsList = props => {
           return (
             <tr key={id}>
               <td> {name}</td>
+              <td>pre {eater} ľudí</td>
             </tr>
           );
         }
         return (
           <tr key={id}>
             <td>{name}</td>
-            <td>{amount * amountPerEater} {amountUnit}</td>
+            {!amount || !amountUnit ? <td>podľa chuti</td>
+              : <td>{amount * amountPerEater} {amountUnit}</td>
+            }
+
           </tr>
         );
       })}

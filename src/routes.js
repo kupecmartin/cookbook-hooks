@@ -6,6 +6,7 @@ import { ApiTestPage } from "./pages/ApiTestPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { RecipeListPage } from "./pages/RecipeListPage";
 import { RecipeDetailPage } from "./pages/RecipeDetailPage";
+import { RecipeEditPage } from "./pages/RecipeEditPage";
 
 export function Routes() {
   return (
@@ -13,6 +14,7 @@ export function Routes() {
       <Route exact path="/" component={HomePage} />
       <Route exact path="/recipes" component={RecipeListPage} />
       <Route path="/recipe/:slug" component={RecipeDetailPage} />
+      <Route path="/recipe-edit/:slug" component={RecipeEditPage} />
       <Route path="/api-test" component={ApiTestPage} />
       <Route path="*" component={NotFoundPage} />
     </Switch>

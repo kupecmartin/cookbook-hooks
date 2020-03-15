@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="229d8583-2045-42b1-9f7d-ea41977e8aa8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RecipeComponents/DirectionsList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RecipeComponents/IngredientsList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RecipeComponents/RecipeFooter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/RecipeComponents/EditButtons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/RecipeEditPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppNavbar/AppNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppNavbar/AppNavbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Paginator/Pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Paginator/Pagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RecipeComponents/IngredientsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecipeComponents/IngredientsList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/RecipeComponents/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecipeComponents/SearchBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RecipeComponents/TimeConversion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecipeComponents/TimeConversion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RecipeComponents/Title.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecipeComponents/Title.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/RecipeDetail/RecipeDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecipeDetail/RecipeDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RecipeList/RecipeListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecipeList/RecipeListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/RecipeDetailPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RecipeDetailPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/RecipeListPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RecipeListPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +91,7 @@
       <workItem from="1584016600510" duration="5933000" />
       <workItem from="1584095813526" duration="1648000" />
       <workItem from="1584099938419" duration="1359000" />
-      <workItem from="1584101341535" duration="34108000" />
+      <workItem from="1584101341535" duration="49819000" />
     </task>
     <servers />
   </component>
