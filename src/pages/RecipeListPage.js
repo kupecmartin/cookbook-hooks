@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import {Alert, Container} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 
 import {api} from "../api";
 
@@ -29,7 +29,7 @@ export const RecipeListPage = () => {
     };
 
     fetchRecipes().then(r => recipes);
-  }, [recipes]);
+  }, []);
 
 
   //searchInput handler
@@ -43,7 +43,7 @@ export const RecipeListPage = () => {
 
   //Filter recipes
   const filterRecipes = recipe => {
-    const {title, preparationTime, sideDish} = recipe;
+    const {title, preparationTime} = recipe;
     const isInTimeFrame = !isChecked || preparationTime < 30;
     const containsSearchString =
       title.toLowerCase().indexOf(searchString.toLowerCase()) > -1;

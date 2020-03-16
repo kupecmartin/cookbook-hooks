@@ -7,7 +7,7 @@ export const RecipeEditPage = () => {
 
   return (
     <Jumbotron>
-      <h4>Editujeme</h4>
+      <h4>Edit page in progress</h4>
       <p>
         <Link to="/" className="btn btn-primary btn-lg">
           Go to Home Page

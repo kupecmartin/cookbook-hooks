@@ -10,7 +10,8 @@ export const RecipeDetailPage = (props) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  //getting data from api
+
+  // getting data from api
   useEffect(() => {
     const {params} = props.match || {};
     const {slug} = params || {};
@@ -23,7 +24,7 @@ export const RecipeDetailPage = (props) => {
     };
 
     fetchRecipe().then(r => recipe);
-  }, [/*props.match,recipes*/]);
+  }, []);
 
   return (
     <Container>

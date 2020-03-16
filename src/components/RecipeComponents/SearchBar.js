@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {Form, Col, Row} from "react-bootstrap";
+import {Form} from "react-bootstrap";
 
 export function SearchBar(props) {
   const {value, isChecked, onInputChange, onCheckboxChange} = props;

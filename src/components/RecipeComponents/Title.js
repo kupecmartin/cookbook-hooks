@@ -1,5 +1,5 @@
 import React from "react";
-// import PropTypes from "prop-types";
+
 
 export const Title = (props) => {
   const {title} = props;
@@ -8,6 +8,4 @@ export const Title = (props) => {
   );
 };
 
-// Title.propTypes = {
-//   title: PropTypes.string.isRequired
-// }
+

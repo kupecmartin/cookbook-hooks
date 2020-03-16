@@ -1,7 +1,6 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import PropTypes from "prop-types";
-import {Container, Row, Col, Media, Button} from "react-bootstrap";
+import {Container, Row, Col, Media} from "react-bootstrap";
 
 import {LoadingAnimation} from "../common/LoadingAnimation";
 import {ErrorAlert} from "../common/ErrorAlert";
@@ -10,10 +9,6 @@ import {EditButtons} from "../RecipeComponents/EditButtons";
 import {DirectionsList} from "../RecipeComponents/DirectionsList";
 import {IngredientsList} from "../RecipeComponents/IngredientsList";
 import {RecipeFooter} from "../RecipeComponents/RecipeFooter";
-// import {Title} from "../RecipeComponents/Title";
-// import {SideDish} from "../RecipeComponents/SideDish";
-
-
 
 /**
  * @return {null}
@@ -57,7 +52,6 @@ export const RecipeDetail = (props) => {
        <EditButtons
           slug={slug}
        />
-
       </Media>
       <Container>
         <Row>
